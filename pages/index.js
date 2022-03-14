@@ -1,5 +1,4 @@
 import Advantages from "../components/Advantages";
-import Banner from "../components/Banner";
 import Contact from "../components/Contact";
 import Counts from "../components/Counts";
 import Description from "../components/Description";
@@ -13,7 +12,6 @@ import Search from "../components/Search";
 export default function Home() {
   return (
     <Layout>
-      {/* <Banner /> */}
       <Description />
       <Advantages />
       <Contact />
@@ -23,7 +21,6 @@ export default function Home() {
       <div className="bg-[#f8f8f8]">
         <Comments />
       </div>
-
       <ContactInfo />
       <Search />
     </Layout>
