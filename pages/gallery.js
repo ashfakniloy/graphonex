@@ -25,7 +25,7 @@ function galleryPage() {
     <Layout heading={heading} text={text}>
       <div className="bg-white">
         <div className="lg:container py-20 px-4 lg:py-32">
-          <div className="lg:container py-16 px-4 grid lg:grid-cols-3 gap-6">
+          <div className="lg:container py-16 lg:px-4 grid lg:grid-cols-3 gap-6">
             {products.map((product) => (
               <ImageGrid key={product.id} image={product.img} />
             ))}
