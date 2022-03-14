@@ -32,8 +32,8 @@ function Creatives() {
               />
               <div className="mt-5 lg:ml-8">
                 <p className=" text-custom-gray">
-                  " Build on the principles of excellence. For all the things
-                  you want to do. For the things you love. "
+                  Build on the principles of excellence. For all the things you
+                  want to do. For the things you love.
                 </p>
                 <p className="mt-5 text-custom-gray3 text-sm">
                   Jonathan Guerrero, CEO

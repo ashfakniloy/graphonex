@@ -9,7 +9,7 @@ function Banner({ heading, text }) {
       {pathname === "/" ? (
         <div className="lg:container px-4 grid grid-cols-3 text-white py-32 lg:py-[370px]">
           <div className="col-span-3 lg:col-span-2 pt-28 lg:pt-0">
-            <p className="">There's a template for everything</p>
+            <p className="">There&apos;s a template for everything</p>
             <h1 className="font-Montserrat text-[25px] lg:text-[55px] leading-tight ">
               We create high quality digital solutions
             </h1>

@@ -4,7 +4,7 @@ import Modal from "../components/Modal";
 import Pricing from "../components/Pricing";
 import Request from "../components/Request";
 
-function pricing() {
+function PricingPage() {
   const heading = "Pricing";
   const text = "Beautifully Minimal";
   const [showModal, setShowModal] = useState(false);
@@ -22,4 +22,4 @@ function pricing() {
   );
 }
 
-export default pricing;
+export default PricingPage;

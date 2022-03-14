@@ -22,6 +22,7 @@ function Modal({ showModal, setShowModal }) {
   return (
     <div>
       <Dialog
+        aria-label="Message submission form"
         isOpen={showModal}
         // onDismiss={() => setShowModal(false)}
         style={modalStyle}

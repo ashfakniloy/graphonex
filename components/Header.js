@@ -35,10 +35,10 @@ function Header() {
       >
         <div className="px-4 lg:container flex justify-between items-center">
           <div className="">
-            <Link href="/">
-              <h1 className="text-[22px] font-Raleway cursor-pointer">
+            <Link href="/" passHref>
+              <p className="text-[22px] font-Raleway cursor-pointer">
                 Graphonex
-              </h1>
+              </p>
             </Link>
           </div>
 
@@ -51,53 +51,53 @@ function Header() {
           </button>
 
           <div className="hidden lg:flex gap-[50px] duration-300 uppercase text-sm font-Montserrat">
-            <Link href="/">
-              <p
+            <Link href="/" passHref>
+              <a
                 className={`header-link ${
                   pathname === "/" ? "text-custom-orange" : ""
                 }`}
               >
                 home
-              </p>
+              </a>
             </Link>
-            <Link href="/about">
-              <p className="header-link">about us</p>
+            <Link href="/about" passHref>
+              <a className="header-link">about us</a>
             </Link>
-            <Link href="/gallery">
-              <p className="header-link">gallery</p>
+            <Link href="/gallery" passHref>
+              <a className="header-link">gallery</a>
             </Link>
-            <Link href="/services">
-              <p className="header-link">services</p>
+            <Link href="/services" passHref>
+              <a className="header-link">services</a>
             </Link>
 
             <div
               onMouseEnter={() => setShowMenu(true)}
               onMouseLeave={() => setShowMenu(false)}
             >
-              <Link href="">
-                <p className="header-link">pages</p>
+              <Link href="" passHref>
+                <a className="header-link">pages</a>
               </Link>
 
               {showMenu ? (
                 <div className="absolute">
                   <div className="h-8 border-b-2 border-custom-gray"></div>
-                  <div className="text-white bg-custom-orange py-3  shadow-xl">
-                    <Link href="/clients">
-                      <p className="hover:text-custom-orange hover:bg-white py-2 pl-4 pr-24 cursor-pointer duration-300">
+                  <div className="text-white bg-custom-orange py-3 shadow-xl">
+                    <Link href="/clients" passHref>
+                      <a className="hover:text-custom-orange hover:bg-white py-2 pl-4 pr-24 cursor-pointer duration-300">
                         Clients
-                      </p>
+                      </a>
                     </Link>
 
-                    <Link href="/our-team">
-                      <p className="hover:text-custom-orange hover:bg-white py-2 pl-4 pr-24 cursor-pointer duration-300">
+                    <Link href="/our-team" passHref>
+                      <a className="hover:text-custom-orange hover:bg-white py-2 pl-4 pr-24 cursor-pointer duration-300">
                         Our Team
-                      </p>
+                      </a>
                     </Link>
 
-                    <Link href="/pricing">
-                      <p className="hover:text-custom-orange hover:bg-white py-2 pl-4 pr-24 cursor-pointer duration-300">
+                    <Link href="/pricing" passHref>
+                      <a className="hover:text-custom-orange hover:bg-white py-2 pl-4 pr-24 cursor-pointer duration-300">
                         Pricing
-                      </p>
+                      </a>
                     </Link>
                   </div>
                 </div>
@@ -106,11 +106,11 @@ function Header() {
               )}
             </div>
 
-            <Link href="/blog">
-              <p className="header-link">blog</p>
+            <Link href="/blog" passHref>
+              <a className="header-link">blog</a>
             </Link>
-            <Link href="/contact">
-              <p className="header-link">contact</p>
+            <Link href="/contact" passHref>
+              <a className="header-link">contact</a>
             </Link>
           </div>
         </div>
