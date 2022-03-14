@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import { pricingList } from "../data/pricingList";
 import Modal from "./Modal";
 
@@ -19,7 +20,7 @@ function Pricing() {
               </div>
             )}
             <div className="mx-auto">
-              <img src={item.img} alt="" />
+              <Image src={item.img} alt="" width={161} height={161} />
             </div>
             <div className="heading-sm mt-4">
               <h2>{item.name}</h2>

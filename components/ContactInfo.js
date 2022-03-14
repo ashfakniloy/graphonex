@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 function ContactInfo() {
   const [name, setName] = useState("");
@@ -24,15 +25,30 @@ function ContactInfo() {
             </p>
             <div className="flex flex-col gap-7 lg:gap-10 mt-7 lg:mt-10 w-[240px] text-custom-gray3">
               <div className="flex items-center gap-8 ">
-                <img src="/images/contact/phone.png" alt="" />
+                <Image
+                  src="/images/contact/phone.png"
+                  alt=""
+                  width={38}
+                  height={35}
+                />
                 <p>(123) 456-7890</p>
               </div>
               <div className="flex items-center gap-8 ">
-                <img src="/images/contact/message.png" alt="" />
+                <Image
+                  src="/images/contact/message.png"
+                  alt=""
+                  width={35}
+                  height={28}
+                />
                 <p>mail@demolink.org</p>
               </div>
               <div className="flex items-center gap-8 ">
-                <img src="/images/contact/location.png" alt="" />
+                <Image
+                  src="/images/contact/location.png"
+                  alt=""
+                  width={60}
+                  height={60}
+                />
                 <p>6036 Richmond hwy., Alexandria, VA 22303</p>
               </div>
             </div>

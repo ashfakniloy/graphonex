@@ -1,5 +1,6 @@
-import React from "react";
+import Image from "next/image";
 import Slider from "react-slick";
+import { commentList } from "../data/commentList";
 
 function Comments() {
   const settings = {
@@ -16,65 +17,31 @@ function Comments() {
       <div className="lg:container py-16 px-4 lg:py-44">
         <div className="lg:mx-28">
           <div className="flex flex-col items-center">
-            <img src="/images/message.png" alt="" />
+            <Image src="/images/message.png" alt="" width={55} height={40} />
           </div>
           <div className="mt-5 lg:mt-10">
             <div className="">
               <Slider {...settings}>
-                <div className="p-6 text-center">
-                  <img
-                    src="/images/comments/person1.png"
-                    alt=""
-                    className="scale-150 lg:pb-5"
-                  />
-                  <h2 className="py-6 heading-lg lg:text-[26px] text-center">
-                    “ The design quality is exquisite. What is even better than
-                    the design quality is the customer service. Their response
-                    time is surprisingly fast! ”
-                  </h2>
-                  <p className="text-lg lg:text-xl text-green-400">
-                    Edward Hoffman
-                  </p>
-                  <p className="text-xs lg:text-sm text-custom-gray3">
-                    Web designer from Gix
-                  </p>
-                </div>
-                <div className="p-6 text-center">
-                  <img
-                    src="/images/comments/person2.png"
-                    alt=""
-                    className="scale-150 lg:pb-5"
-                  />
-                  <h2 className="py-6 heading-lg lg:text-[26px] text-center">
-                    “ The themes are amazing. I am glad to stumble upon this
-                    team. I crank out high-quality responsive websites for my
-                    clients and they are glad too. Thanks! ”
-                  </h2>
-                  <p className="text-lg lg:text-xl text-green-400">
-                    Gary Stonem
-                  </p>
-                  <p className="text-xs lg:text-sm text-custom-gray3">
-                    Web Developer from Shneebly
-                  </p>
-                </div>
-                <div className="p-6 text-center">
-                  <img
-                    src="/images/comments/person3.png"
-                    alt=""
-                    className="scale-150 lg:pb-5"
-                  />
-                  <h2 className="py-6 heading-lg lg:text-[26px] text-center">
-                    “ What you’ve done worth a lot. I appreciate cooperation
-                    with these guys. They are talented people. Thanks to them, I
-                    built my own business and have my own employees. ”
-                  </h2>
-                  <p className="text-lg lg:text-xl text-green-400">
-                    Juan Ramires
-                  </p>
-                  <p className="text-xs lg:text-sm text-custom-gray3">
-                    CEO from Webtimizingly
-                  </p>
-                </div>
+                {commentList.map((comment) => (
+                  <div key={comment.id} className="p-6 text-center">
+                    <Image
+                      src={comment.img}
+                      alt=""
+                      className="lg:pb-5"
+                      width={50}
+                      height={50}
+                    />
+                    <h2 className="py-6 heading-lg lg:text-[26px] text-center">
+                      {comment.desc}
+                    </h2>
+                    <p className="text-lg lg:text-xl text-green-400">
+                      {comment.name}
+                    </p>
+                    <p className="text-xs lg:text-sm text-custom-gray3">
+                      {comment.position}
+                    </p>
+                  </div>
+                ))}
               </Slider>
             </div>
           </div>

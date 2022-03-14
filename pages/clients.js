@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import Comments from "../components/Comments";
 import Layout from "../components/Layout";
 import { clientList } from "../data/clientList";
@@ -18,7 +18,7 @@ function clients() {
                 className="flex gap-14 lg:gap-20 items-center"
               >
                 <div className="">
-                  <img src={client.img} alt="" width={500} />
+                  <Image src={client.img} alt="" width={500} height={180} />
                 </div>
                 <div className="">
                   <h2 className="heading-sm">{client.name}</h2>

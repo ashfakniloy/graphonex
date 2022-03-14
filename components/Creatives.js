@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 function Creatives() {
   return (
@@ -24,8 +24,13 @@ function Creatives() {
               And that’s how we work with our startups — as partners.
             </p>
             <div className="mt-5 flex gap-4">
-              <img src="/images/about/about.jpg" alt="" />
-              <div className="mt-5">
+              <Image
+                src="/images/about/about.jpg"
+                alt=""
+                width={300}
+                height={300}
+              />
+              <div className="mt-5 lg:ml-8">
                 <p className=" text-custom-gray">
                   " Build on the principles of excellence. For all the things
                   you want to do. For the things you love. "
@@ -38,7 +43,12 @@ function Creatives() {
           </div>
 
           <div className="flex-1">
-            <img src="/images/about/about2.jpg" alt="" />
+            <Image
+              src="/images/about/about2.jpg"
+              alt=""
+              width={533}
+              height={485}
+            />
           </div>
         </div>
       </div>

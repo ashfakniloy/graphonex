@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import { staffs } from "../data/staffs";
 
 function Staff() {
@@ -21,7 +21,7 @@ function Staff() {
               key={staff.id}
               className="flex flex-col items-center gap-2 lg:gap-5"
             >
-              <img src={staff.img} alt="" />
+              <Image src={staff.img} alt="" width={280} height={340} />
               <h3 className="text-lg font-Montserrat text-custom-gray lg:heading-lg">
                 {staff.name}
               </h3>

@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 function Description() {
   return (
@@ -26,9 +26,14 @@ function Description() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 lg:grid grid-cols-4 lg:gap-6 mt-20">
+        <div className="flex flex-col gap-6 lg:grid grid-cols-4 lg:gap-6 mt-20">
           <div className="">
-            <img src="/images/management.png" alt="" />
+            <Image
+              src="/images/description/management.png"
+              alt=""
+              width={59}
+              height={64}
+            />
             <h2 className="mt-5 heading-md">management</h2>
             <p className="mt-6 text-sm leading-relaxed text-custom-gray3">
               We always find the most effective ways, find a proper approach to
@@ -36,7 +41,12 @@ function Description() {
             </p>
           </div>
           <div className="">
-            <img src="/images/design.png" alt="" />
+            <Image
+              src="/images/description/design.png"
+              alt=""
+              width={64}
+              height={64}
+            />
             <h2 className="mt-5 heading-md">design</h2>
             <p className="mt-6 text-sm leading-relaxed text-custom-gray3">
               Bright ideas should be implemented in the appropriate way. We’re
@@ -45,7 +55,12 @@ function Description() {
             </p>
           </div>
           <div className="">
-            <img src="/images/planning.png" alt="" />
+            <Image
+              src="/images/description/planning.png"
+              alt=""
+              width={64}
+              height={64}
+            />
             <h2 className="mt-5 heading-md">planning</h2>
             <p className="mt-6 text-sm leading-relaxed text-custom-gray3">
               We see our mission not only in building our brand from the scratch
@@ -53,7 +68,12 @@ function Description() {
             </p>
           </div>
           <div className="">
-            <img src="/images/analytics.png" alt="" />
+            <Image
+              src="/images/description/analytics.png"
+              alt=""
+              width={52}
+              height={64}
+            />
             <h2 className="mt-5 heading-md">analytics</h2>
             <p className="mt-6 text-sm leading-relaxed text-custom-gray3">
               We provide a comprehensive data on your project status, and our

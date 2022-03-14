@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Layout from "../components/Layout";
 import { staffs } from "../data/staffs";
 
@@ -15,7 +16,7 @@ function ourTeamPage() {
                 key={staff.id}
                 className="flex flex-col items-center gap-4 lg:gap-5 mb-8"
               >
-                <img src={staff.img} alt="" />
+                <Image src={staff.img} alt="" width={280} height={340} />
                 <h3 className="text-lg font-Montserrat text-custom-gray lg:heading-lg">
                   {staff.name}
                 </h3>
