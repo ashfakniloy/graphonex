@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ImageGrid({ image }) {
   return (
     <div className="flex justify-center">
-      <div className="bg-slate-600 w-[330px] h-[250px] overflow-hidden">
+      <div className="bg-slate-600 w-[290px] h-[210px] lg:w-[330px] lg:h-[250px] overflow-hidden">
         <Image
           src={image}
           alt=""
