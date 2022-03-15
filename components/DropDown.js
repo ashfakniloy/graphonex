@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa";
-import classNames from "classnames";
 
 function DropDown({ pathname }) {
   const [showMenu, setShowMenu] = useState(false);

@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Header2 from "./Header2";
 import ScrollToTop from "./ScrollOnTop";
+import Agent from "./Agent";
 
 function Layout({ title, description, keywords, heading, text, children }) {
   const { pathname } = useRouter();
@@ -23,6 +24,7 @@ function Layout({ title, description, keywords, heading, text, children }) {
         <Banner heading={heading} text={text} />
 
         {children}
+        <Agent />
 
         <ScrollToTop />
 

@@ -23,15 +23,16 @@ function Creatives() {
               Professional tools & Design makes our investments more valuable.
               And that’s how we work with our startups — as partners.
             </p>
-            <div className="mt-5 flex gap-4">
+            <div className="mt-5 flex gap-2 lg:gap-4">
               <Image
                 src="/images/about/about.jpg"
                 alt=""
+                className=""
                 width={300}
                 height={300}
               />
-              <div className="mt-5 lg:ml-8">
-                <p className=" text-custom-gray">
+              <div className="mt-5">
+                <p className=" text-custom-gray text-sm lg:text-base">
                   Build on the principles of excellence. For all the things you
                   want to do. For the things you love.
                 </p>

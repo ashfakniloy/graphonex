@@ -17,7 +17,7 @@ function Counts() {
   };
 
   return (
-    <div className="bg-gray-200">
+    <div className="bg-white">
       <div className="lg:container py-16 px-4 lg:py-36">
         <Waypoint onEnter={onVWEnter}>
           <div className="grid lg:grid-cols-4 gap-4">
