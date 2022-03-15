@@ -6,11 +6,12 @@ import Staff from "../components/Staff";
 import ServicesAccordion from "../components/ServicesAccordion";
 
 function about() {
+  const title = "About page";
   const heading = "We are creative";
   const text = "There is a template for everything";
 
   return (
-    <Layout heading={heading} text={text}>
+    <Layout title={title} heading={heading} text={text}>
       <Creatives />
       <Counts />
       <Staff />

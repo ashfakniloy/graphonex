@@ -5,11 +5,12 @@ import Request from "../components/Request";
 import Pricing from "../components/Pricing";
 
 function servicesPage() {
+  const title = "Services page";
   const heading = "Get Your Next Project Done With Us.";
   const text = "There's a template for everything";
 
   return (
-    <Layout heading={heading} text={text}>
+    <Layout title={title} heading={heading} text={text}>
       <Services />
       <Request />
       <div className="bg-custom-gray4">

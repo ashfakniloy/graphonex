@@ -3,11 +3,12 @@ import Layout from "../components/Layout";
 import { moreList } from "../data/moreList";
 
 function morePage() {
+  const title = "More page";
   const heading = "We are creative";
   const text = "There's a template for everything";
 
   return (
-    <Layout heading={heading} text={text}>
+    <Layout title={title} heading={heading} text={text}>
       <div className="bg-white">
         <div className="container py-12 lg:py-[190px] px-4">
           <div className="heading-lg">

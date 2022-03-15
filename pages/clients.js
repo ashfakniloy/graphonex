@@ -4,11 +4,12 @@ import Layout from "../components/Layout";
 import { clientList } from "../data/clientList";
 
 function clients() {
+  const title = "Client page";
   const heading = "Our dear clients";
   const text = "Beautifully Minimal";
 
   return (
-    <Layout heading={heading} text={text}>
+    <Layout title={title} heading={heading} text={text}>
       <div className="bg-custom-gray4">
         <div className="lg:container py-12 lg:py-[190px] px-4">
           <div className="grid lg:grid-cols-2 gap-12">
