@@ -81,7 +81,7 @@ function Header() {
               {showMenu ? (
                 <div className="absolute">
                   <div className="h-8 border-b-2 border-custom-gray"></div>
-                  <div className="text-white bg-custom-orange py-3 shadow-xl">
+                  <div className="text-white bg-custom-orange flex flex-col py-3 shadow-xl">
                     <Link href="/clients" passHref>
                       <a className="hover:text-custom-orange hover:bg-white py-2 pl-4 pr-24 cursor-pointer duration-300">
                         Clients
