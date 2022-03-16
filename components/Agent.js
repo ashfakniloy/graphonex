@@ -41,10 +41,10 @@ function Agent() {
             </div>
             <h1 className="heading-sm">John Smith</h1>
             <p className="text-xs">Agent</p>
-            <p className="flex items-center text-custom-orange cursor-pointer hover:text-black duration-300">
+            <div className="flex items-center text-custom-orange cursor-pointer hover:text-black duration-300">
               <FaPhoneAlt className="mr-1 text-xs" />
               <p className="text-sm">+01777777777</p>
-            </p>
+            </div>
             <div
               className="absolute bottom-2 text-2xl text-slate-600 hover:text-custom-orange duration-300"
               onClick={() => setShowIcons(!showIcons)}

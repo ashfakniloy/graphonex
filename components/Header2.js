@@ -24,6 +24,9 @@ function Header() {
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
   }, []);
 
   return (
@@ -35,7 +38,7 @@ function Header() {
       >
         <div className="px-4 lg:container flex justify-between items-center">
           <div className="">
-            <Link href="/" passHref>
+            <Link href="/">
               <h1 className="text-[22px] font-Raleway cursor-pointer">
                 Graphonex
               </h1>
@@ -51,10 +54,10 @@ function Header() {
           </button>
 
           <div className="hidden lg:flex gap-[50px]  uppercase text-sm font-Montserrat">
-            <Link href="/" passHref>
+            <Link href="/">
               <a className="header2-link border-transparent">home</a>
             </Link>
-            <Link href="/about" passHref>
+            <Link href="/about">
               <a
                 className={`header2-link ${
                   pathname === "/about"
@@ -65,7 +68,7 @@ function Header() {
                 about us
               </a>
             </Link>
-            <Link href="/gallery" passHref>
+            <Link href="/gallery">
               <a
                 className={`header2-link ${
                   pathname === "/gallery"
@@ -76,7 +79,7 @@ function Header() {
                 gallery
               </a>
             </Link>
-            <Link href="/services" passHref>
+            <Link href="/services">
               <a
                 className={`header2-link ${
                   pathname === "/services"
@@ -93,15 +96,15 @@ function Header() {
               onMouseEnter={() => setShowMenu(true)}
               onMouseLeave={() => setShowMenu(false)}
             >
-              <Link href="" className="header2-link cursor-pointer" passHref>
+              <div className="header2-link border-transparent hover:border-transparent">
                 <p>pages</p>
-              </Link>
+              </div>
 
               {showMenu ? (
                 <div className="absolute">
                   <div className="h-8 border-b-2 border-custom-orange"></div>
                   <div className="text-custom-orange bg-white flex flex-col gap-4 p-6 pr-24 shadow-xl ">
-                    <Link href="/clients" passHref>
+                    <Link href="/clients">
                       <a
                         className={
                           pathname === "/clients"
@@ -112,7 +115,7 @@ function Header() {
                         Clients
                       </a>
                     </Link>
-                    <Link href="/our-team" passHref>
+                    <Link href="/our-team">
                       <a
                         className={
                           pathname === "/our-team"
@@ -123,7 +126,7 @@ function Header() {
                         Our Team
                       </a>
                     </Link>
-                    <Link href="/pricing" passHref>
+                    <Link href="/pricing">
                       <a
                         className={
                           pathname === "/pricing"
@@ -141,7 +144,7 @@ function Header() {
               )}
             </div>
 
-            <Link href="/blog" passHref>
+            <Link href="/blog">
               <a
                 className={`header2-link ${
                   pathname === "/blog"
@@ -152,7 +155,7 @@ function Header() {
                 blog
               </a>
             </Link>
-            <Link href="/contact" passHref>
+            <Link href="/contact">
               <a
                 className={`header2-link ${
                   pathname === "/contact"

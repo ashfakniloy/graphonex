@@ -24,6 +24,9 @@ function Header() {
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
   }, []);
 
   return (
@@ -35,7 +38,7 @@ function Header() {
       >
         <div className="px-4 lg:container flex justify-between items-center">
           <div className="">
-            <Link href="/" passHref>
+            <Link href="/">
               <p className="text-[22px] font-Raleway cursor-pointer">
                 Graphonex
               </p>
@@ -51,7 +54,7 @@ function Header() {
           </button>
 
           <div className="hidden lg:flex gap-[50px] duration-300 uppercase text-sm font-Montserrat">
-            <Link href="/" passHref>
+            <Link href="/">
               <a
                 className={`header-link ${
                   pathname === "/" ? "text-custom-orange" : ""
@@ -60,13 +63,13 @@ function Header() {
                 home
               </a>
             </Link>
-            <Link href="/about" passHref>
+            <Link href="/about">
               <a className="header-link">about us</a>
             </Link>
-            <Link href="/gallery" passHref>
+            <Link href="/gallery">
               <a className="header-link">gallery</a>
             </Link>
-            <Link href="/services" passHref>
+            <Link href="/services">
               <a className="header-link">services</a>
             </Link>
 
@@ -74,27 +77,27 @@ function Header() {
               onMouseEnter={() => setShowMenu(true)}
               onMouseLeave={() => setShowMenu(false)}
             >
-              <Link href="" passHref>
-                <a className="header-link">pages</a>
-              </Link>
+              <div>
+                <p className="header-link">pages</p>
+              </div>
 
               {showMenu ? (
                 <div className="absolute">
                   <div className="h-8 border-b-2 border-custom-gray"></div>
                   <div className="text-white bg-custom-orange flex flex-col py-3 shadow-xl">
-                    <Link href="/clients" passHref>
+                    <Link href="/clients">
                       <a className="hover:text-custom-orange hover:bg-white py-2 pl-4 pr-24 cursor-pointer duration-300">
                         Clients
                       </a>
                     </Link>
 
-                    <Link href="/our-team" passHref>
+                    <Link href="/our-team">
                       <a className="hover:text-custom-orange hover:bg-white py-2 pl-4 pr-24 cursor-pointer duration-300">
                         Our Team
                       </a>
                     </Link>
 
-                    <Link href="/pricing" passHref>
+                    <Link href="/pricing">
                       <a className="hover:text-custom-orange hover:bg-white py-2 pl-4 pr-24 cursor-pointer duration-300">
                         Pricing
                       </a>
@@ -106,10 +109,10 @@ function Header() {
               )}
             </div>
 
-            <Link href="/blog" passHref>
+            <Link href="/blog">
               <a className="header-link">blog</a>
             </Link>
-            <Link href="/contact" passHref>
+            <Link href="/contact">
               <a className="header-link">contact</a>
             </Link>
           </div>

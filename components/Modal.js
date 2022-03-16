@@ -8,10 +8,10 @@ function Modal({ showModal, setShowModal }) {
   const [number, setNumber] = useState("");
 
   const modalStyle = {
-    "min-width": "350px",
-    "max-width": "600px",
-    "margin-top": "300px",
-    "background-color": "white",
+    minWidth: "350px",
+    maxWidth: "600px",
+    marginTop: "300px",
+    backgroundColor: "white",
   };
 
   const handleRequest = (e) => {

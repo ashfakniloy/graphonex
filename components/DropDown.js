@@ -14,7 +14,7 @@ function DropDown({ pathname }) {
             : "bg-white text-custom-orange"
         }  text-lg cursor-pointer uppercase`}
       >
-        <Link href="/" passHref>
+        <Link href="/">
           <a
             className={`px-6 py-2 border-y ${
               pathname === "/" ? "text-custom-orange bg-white" : ""
@@ -23,7 +23,7 @@ function DropDown({ pathname }) {
             home
           </a>
         </Link>
-        <Link href="/about" passHref>
+        <Link href="/about">
           <a
             className={`px-6 py-2 border-b ${
               pathname === "/about" ? "text-black" : ""
@@ -32,7 +32,7 @@ function DropDown({ pathname }) {
             about us
           </a>
         </Link>
-        <Link href="/gallery" passHref>
+        <Link href="/gallery">
           <a
             className={`px-6 py-2 border-b ${
               pathname === "/gallery" ? "text-black" : ""
@@ -41,7 +41,7 @@ function DropDown({ pathname }) {
             gallery
           </a>
         </Link>
-        <Link href="/services" passHref>
+        <Link href="/services">
           <a
             className={`px-6 py-2 border-b ${
               pathname === "/services" ? "text-black" : ""
@@ -67,17 +67,17 @@ function DropDown({ pathname }) {
           </a>
           {showMenu ? (
             <div className="flex flex-col gap-2 px-10 py-2 text-sm cursor-pointer">
-              <Link href="/clients" passHref>
+              <Link href="/clients">
                 <a className={pathname === "/clients" ? "text-black" : ""}>
                   clients
                 </a>
               </Link>
-              <Link href="/our-team" passHref>
+              <Link href="/our-team">
                 <a className={pathname === "/our-team" ? "text-black" : ""}>
                   our team
                 </a>
               </Link>
-              <Link href="/pricing" passHref>
+              <Link href="/pricing">
                 <a className={pathname === "/pricing" ? "text-black" : ""}>
                   pricing
                 </a>
@@ -88,7 +88,7 @@ function DropDown({ pathname }) {
           )}
         </div>
 
-        <Link href="/blog" passHref>
+        <Link href="/blog">
           <a
             className={`px-6 py-2 border-b ${
               pathname === "/blog" ? "text-black" : ""
@@ -98,7 +98,7 @@ function DropDown({ pathname }) {
           </a>
         </Link>
 
-        <Link href="/contact" passHref>
+        <Link href="/contact">
           <a
             className={`px-6 py-2 ${
               pathname === "/contact" ? "text-black" : ""
